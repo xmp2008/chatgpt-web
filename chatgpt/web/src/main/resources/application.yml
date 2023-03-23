@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: start-test
+#  elasticsearch:
+#    rest:
+#      uris: 10.0.6.1:9200
+#      scheme: http
+#      read-timeout: 300000
+#      connection-timeout: 300000
+#  data:
+#    elasticsearch:
+#      repositories:
+#        enabled: true
+#    client:
+#      reactive:
+#        connection-timeout: 300000
+#        socket-timeout: 300000
+#  redis:
+#    host: 10.0.6.1
+#    port: 6379
+#    client-type: LETTUCE
+
+#  datasource:
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://10.0.6.1:3306/chatgpt?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8
+#    username: xmp
+#    password: xmp2562602
+#  jpa:
+#    show-sql: true # 默认false，在日志里显示执行的sql语句
+#    database: mysql
+#    hibernate.ddl-auto: update #指定为update，每次启动项目检测表结构有变化的时候会新增字段，表不存在时会新建，如果指定create，则每次启动项目都会清空数据并删除表，再新建
+#    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#    hibernate:
+#      naming:
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl #指定jpa的自动表生成策略，驼峰自动映射为下划线格式
+#        #physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+logging:
+  config: classpath:log4j2.yml  # log4j2配置文件
+  file: ../myspringlogs/xxxx.log
+  level:
+    root: info
+server:
+  port: 8085
+
